@@ -5,7 +5,7 @@ import json
 
 def display_title():
     title = Label(root, text="iQuiz Application", font=("Arial", 30, "bold"),
-                width=40, bg="red", fg="white", justify=CENTER)
+                width=40, bg="green", fg="white")
 
     title.place(x=0, y=2)
 
@@ -59,10 +59,10 @@ class Quiz:
 
         next_button.place(x=350, y=380)
 
-        quit_button = Button(root, text="Quit", font=("Arial", 20, "bold"),
-                             command=root.destroy, width=10, bg="red", fg="white")
+        quit_button = Button(root, text="Quit", font=("Arial", 15, "bold"),
+                             command=root.destroy, width=5, bg="red", fg="white")
 
-        quit_button.place(x=700, y=380)
+        quit_button.place(x=800, y=60)
 
     def display_options(self):
         val = 0
